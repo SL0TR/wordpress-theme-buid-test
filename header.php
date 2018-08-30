@@ -15,7 +15,7 @@
 </head>
 <body <?php body_class(); ?>>
   <nav class="nav">
-    <ul class="nav-top">
+    <!-- <ul class="nav-top">
       <li><a href="#"><?php _e('Citygem Partners ', 'sl0tr'); ?> </a></li>
       <li><a href="#"><?php  _e('Citygem Centers', 'sl0tr'); ?>  </a></li>
       <li><a href="./contact-us.html">Contact Us</a></li>
@@ -32,7 +32,12 @@
       <li><a href="#">About Sapphire</a></li>
       <li><a href="/welcome-offer.html">Welcome Offer</a></li>
       <a class="primary-btn" href="#" role="button">Become a Member</a>
-    </ul>
+    </ul> -->
+    <?php 
+      wp_nav_menu(array(
+        'menu_class' => 'nav'
+      ))
+    ?>
   </nav>
 </body>
 </html>
