@@ -35,7 +35,9 @@
     </ul> -->
     <?php 
       wp_nav_menu(array(
-        'menu_class' => 'nav'
+        'menu_class' => 'nav',
+        'theme_location' => 'main-menu',
+        'container' => false
       ))
     ?>
   </nav>
